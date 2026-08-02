@@ -423,6 +423,20 @@ section h2{
 
 }
 
+.menu-box h3 a{
+
+    color:#8c6b4d;
+
+    text-decoration:none;
+
+}
+
+.menu-box h3 a:hover{
+
+    color:#6f543d;
+
+}
+
 .menu-box p{
 
     color:#666;
