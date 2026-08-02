@@ -590,6 +590,7 @@ nav ul{
 
 }
 
+   
 .menu-grid{
 
     grid-template-columns:1fr;
@@ -605,6 +606,11 @@ nav ul{
 section h2{
 
     font-size:32px;
+}
+
+h3{
+
+    font-family: "Cormorant Garamond", serif;
 
 }
 
