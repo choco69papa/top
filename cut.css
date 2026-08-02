@@ -108,7 +108,11 @@ header.scrolled{
 
 header.scrolled .logo{
 
+    font-size:32px;
+    font-weight:700;
+    letter-spacing:4px;
     color:#6b533e;
+    transition:.3s;
 
 }
 
