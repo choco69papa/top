@@ -120,20 +120,24 @@ nav a:hover {
     overflow: hidden;
 }
 
+/* cut.css の該当箇所を修正 */
+
 .hero-inner {
     position: relative;
-    width: min(92%, 1300px); /* トップページと枠幅を完全統一 */
+    width: min(92%, 1300px);
     margin: 0 auto;
     min-height: 530px;
     display: flex;
     align-items: center;
     z-index: 2;
+    padding-left: 8%; /* leftではなくpaddingで位置を微調整 */
 }
 
 .hero-text {
     position: relative;
-    left: 8%;            /* トップページ（.hero-text）と同じ左マージン位置に指定 */
-    max-width: 480px;    /* トップページとテキスト幅を統一 */
+    left: 0;           /* left指定を解除して右側の切れを防止 */
+    max-width: 580px;  /* 文字が途中で切れないよう十分な横幅を確保 */
+    z-index: 3;
 }
 
 .hero-text h1 {
