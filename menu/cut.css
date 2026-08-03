@@ -124,7 +124,7 @@ nav a:hover {
 
 .hero-inner {
     position: relative;
-    width: min(92%, 1300px);
+    width: min(92%, 1300px); /* トップページと枠幅を完全統一 */
     margin: 0 auto;
     min-height: 530px;
     display: flex;
@@ -133,7 +133,9 @@ nav a:hover {
 }
 
 .hero-text {
-    max-width: 550px; /* テキストが画像のグラデーション部分に乗るように指定 */
+    position: relative;
+    left: 8%;            /* トップページ（.hero-text）と同じ左マージン位置に指定 */
+    max-width: 480px;    /* トップページとテキスト幅を統一 */
 }
 
 .hero-text h1 {
