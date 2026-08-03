@@ -176,8 +176,9 @@ nav a:hover {
 
 .hero-image img {
     width: 100%;
-    height: 100%;
-    object-fit: contain; /* 横幅・高さいっぱいに収める */
+    height: 650px;           /* 高さをしっかりと固定（トップページに合わせる） */
+    object-fit: cover;       /* 枠いっぱいに広げてトリミング（小さくなるのを防ぐ） */
+    object-position: right center; /* 【重要】画像の右側（人物）を優先して表示 */
 }
 
 /* ===================================
