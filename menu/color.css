@@ -128,6 +128,11 @@ Hero
     overflow: hidden;
 }
 
+
+/* ===================================
+Hero Inner
+=================================== */
+
 .hero-inner {
     position: relative;
     width: min(92%, 1300px);
@@ -185,6 +190,11 @@ Hero
 .hero-btn:hover {
     background: #6e5847;
 }
+
+
+/* ===================================
+Hero Image
+=================================== */
 
 .hero-image {
     position: absolute;
@@ -293,50 +303,24 @@ Price Menu
     margin-bottom: 70px;
 }
 
-
-/* ===================================
-Color Menu Category
-=================================== */
-
-.menu-category {
+.price-list {
     width: min(100%, 900px);
-    margin: 0 auto 45px;
+    margin: 0 auto;
     background: #ffffff;
-    padding: 40px 60px;
+    padding: 60px;
     box-shadow: 0 10px 40px rgba(0, 0, 0, .05);
 }
 
-.menu-category > h3 {
-    color: #6b533e;
-    font-size: 25px;
-    font-weight: 400;
-    margin-bottom: 20px;
-    padding-bottom: 15px;
-    border-bottom: 1px solid #ece5dc;
-}
-
-
-/* ===================================
-Price List
-=================================== */
-
-.price-list {
-    width: 100%;
-    margin: 0;
-    background: transparent;
-    padding: 0;
-    box-shadow: none;
+.price-list + .price-list {
+    margin-top: 30px;
 }
 
 .price-item {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    padding: 16px 0;
-
+    padding: 22px 0;
     border-bottom: 1px solid #ece5dc;
-
     font-size: 18px;
 }
 
@@ -352,47 +336,6 @@ Price List
     color: #8c6b4d;
     font-weight: bold;
     letter-spacing: 1px;
-}
-
-
-/* ===================================
-No Cut
-=================================== */
-
-.no-cut {
-    width: min(100%, 900px);
-    margin: 80px auto 0;
-    padding-top: 70px;
-    border-top: 1px solid #ddd;
-}
-
-.no-cut > h3 {
-    text-align: center;
-    font-size: 32px;
-    font-weight: 300;
-    color: #6b533e;
-    margin-bottom: 50px;
-    letter-spacing: 2px;
-}
-
-
-/* ===================================
-No Cut Menu
-=================================== */
-
-.no-cut .menu-category {
-    margin-bottom: 45px;
-}
-
-.no-cut .menu-category > h3 {
-    font-size: 22px;
-}
-
-.no-cut .menu-category small {
-    font-size: 14px;
-    font-weight: normal;
-    color: #999;
-    margin-left: 8px;
 }
 
 
@@ -472,8 +415,7 @@ footer {
 
 
 /* ===================================
-Responsive
-タブレット向け：900px以下
+Responsive (タブレット向け: 900px以下)
 =================================== */
 
 @media (max-width: 900px) {
@@ -510,9 +452,6 @@ Responsive
         font-size: 14px;
     }
 
-
-    /* Hero */
-
     .page-hero {
         padding-top: 140px;
         min-height: auto;
@@ -545,15 +484,9 @@ Responsive
         font-size: 28px;
     }
 
-
-    /* Container */
-
     .container {
         padding: 70px 0;
     }
-
-
-    /* Concept */
 
     .concept-grid {
         grid-template-columns: 1fr;
@@ -564,29 +497,13 @@ Responsive
         height: 320px;
     }
 
-
-    /* Price */
-
-    .menu-category {
+    .price-list {
         padding: 30px;
-        margin-bottom: 35px;
-    }
-
-    .menu-category > h3 {
-        font-size: 22px;
     }
 
     .price-item {
         font-size: 16px;
     }
-
-    .no-cut {
-        margin-top: 60px;
-        padding-top: 50px;
-    }
-
-
-    /* Footer */
 
     .footer-inner {
         padding: 50px 20px;
@@ -595,13 +512,11 @@ Responsive
     .footer-inner h3 {
         font-family: "Cormorant Garamond", serif;
     }
-
 }
 
 
 /* ===================================
-Responsive
-スマートフォン向け：600px以下
+Responsive (スマートフォン向け: 600px以下)
 =================================== */
 
 @media (max-width: 600px) {
@@ -624,9 +539,6 @@ Responsive
     nav a {
         font-size: 13px;
     }
-
-
-    /* Hero */
 
     .page-hero {
         padding-top: 20px;
@@ -651,18 +563,12 @@ Responsive
         margin-bottom: 25px;
     }
 
-    .hero-btn,
-    .reserve-btn {
+    .hero-btn, .reserve-btn {
         padding: 14px 35px;
         font-size: 15px;
     }
 
-
-    /* Concept */
-
-    .concept h2,
-    .price h2,
-    .reserve h2 {
+    .concept h2, .price h2, .reserve h2 {
         font-size: 30px;
         margin-bottom: 40px;
     }
@@ -676,70 +582,25 @@ Responsive
         font-size: 15px;
     }
 
-
-    /* Color Menu */
-
-    .menu-category {
-        padding: 25px 20px;
-        margin-bottom: 25px;
-    }
-
-    .menu-category > h3 {
-        font-size: 20px;
-        margin-bottom: 10px;
-        padding-bottom: 12px;
-    }
-
     .price-list {
-        padding: 0;
+        padding: 20px 15px;
+    }
+
+    .price-list + .price-list {
+        margin-top: 20px;
     }
 
     .price-item {
         font-size: 15px;
-        padding: 14px 0;
+        padding: 16px 0;
     }
-
-    .price-item span:last-child {
-        font-size: 15px;
-    }
-
-
-    /* No Cut */
-
-    .no-cut {
-        margin-top: 50px;
-        padding-top: 45px;
-    }
-
-    .no-cut > h3 {
-        font-size: 25px;
-        margin-bottom: 35px;
-    }
-
-    .no-cut .menu-category > h3 {
-        font-size: 19px;
-    }
-
-    .no-cut .menu-category small {
-        display: block;
-        margin-left: 0;
-        font-size: 12px;
-    }
-
-
-    /* Reserve */
 
     .reserve-text {
         font-size: 15px;
         margin-bottom: 30px;
     }
 
-
-    /* Footer */
-
     .footer-inner h3 {
         font-size: 22px;
     }
-
 }
-```
