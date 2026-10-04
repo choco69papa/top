@@ -152,7 +152,7 @@ Hero Inner
 }
 
 .hero-text h1 {
-    font-size: 100px;
+    font-size: 60px;
     font-weight: 300;
     color: #8c6b4d;
     line-height: 1;
@@ -166,7 +166,7 @@ Hero Inner
 }
 
 .hero-text h2 {
-    font-size: 38px;
+    font-size: 32px;
     font-weight: 300;
     margin-bottom: 25px;
     line-height: 1.4;
