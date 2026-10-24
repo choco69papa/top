@@ -606,26 +606,6 @@ Responsive (タブレット向け: 900px以下)
     font-size: 20px;
   }
 
-/* 強調メニューの共通スタイル */
-.price-item-highlight {
-    margin: 8px 0 !important;
-    padding: 12px 15px !important;
-    border-radius: 8px !important;
-    font-weight: bold !important;
-}
-
-/* オレンジ系の強調（トリートメント用） */
-.price-item-highlight.option-orange {
-    background-color: #fff3e0 !important;
-    border-left: 4px solid #ff9800 !important;
-}
-
-/* グリーン系の強調（毛先の退色用） */
-.price-item-highlight.option-green {
-    background-color: #f1f8e9 !important;
-    border-left: 4px solid #8bc34a !important;
-}
-
   .footer-inner {
     padding: 40px 15px;
   }
