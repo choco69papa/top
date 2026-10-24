@@ -69,10 +69,9 @@ ul {
   transform-origin: center center;
 }
 
-/* activeクラスがついた画像を表示し、ゆっくりズームさせる */
 .hero-slider .slide.active {
   opacity: 1;
-  animation: heroZoom 17s linear forwards;
+  /* animation行を削除またはコメントアウト */
 }
 
 .hero-text {
