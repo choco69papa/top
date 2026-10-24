@@ -72,7 +72,7 @@ ul {
 /* activeクラスがついた画像を表示し、ゆっくりズームさせる */
 .hero-slider .slide.active {
   opacity: 1;
-  animation: heroZoom 15s linear forwards;
+  animation: heroZoom 17s linear forwards;
 }
 
 .hero-text {
