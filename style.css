@@ -269,7 +269,7 @@ section h2 {
   font-size: 24px;       /* 文字の大きさ */
   font-weight: normal;  /* 太字にしない */
   color: #8c6b4d;       /* 文字色 */
-  margin-top: 2px;      /* 英語との間隔をグッと狭くする（必要なら0pxでもOK） */
+  margin-top: 0px;      /* 英語との間隔をグッと狭くする（必要なら0pxでもOK） */
   margin-bottom: 15px;   /* 下の説明文との間隔 */
 }
 
