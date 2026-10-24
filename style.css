@@ -266,10 +266,10 @@ section h2 {
 
 .menu-box .sub-title {
   display: block;
-  font-size: 24px;       /* 文字の大きさ（好みに合わせて調整してください） */
+  font-size: 28px;       /* 文字の大きさ（好みに合わせて調整してください） */
   font-weight: normal;  /* 太字にしない */
   color: #666;          /* 文字色 */
-  margin-top: 5px;      /* 英語名との間隔 */
+  margin-top: 2px;      /* 英語名との間隔 */
   margin-bottom: 15px;   /* 下の説明文との間隔 */
 }
 
