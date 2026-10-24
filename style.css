@@ -266,7 +266,7 @@ section h2 {
 
 .menu-box .sub-title {
   display: block;
-  font-size: 25px;       /* 文字の大きさ（好みに合わせて調整してください） */
+  font-size: 24px;       /* 文字の大きさ（好みに合わせて調整してください） */
   font-weight: normal;  /* 太字にしない */
   color: #8c6b4d;          /* 文字色 */
   margin-bottom: 15px;   /* 下の説明文との間隔 */
