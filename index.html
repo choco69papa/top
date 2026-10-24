@@ -180,6 +180,19 @@ window.addEventListener("scroll", function(){
         header.classList.remove("scrolled");
     }
 });
+
+// メインビジュアルの画像切り替え処理
+const slides = document.querySelectorAll('.hero-slider .slide');
+let currentIndex = 0;
+
+function showNextSlide() {
+    slides[currentIndex].classList.remove('active');
+    currentIndex = (currentIndex + 1) % slides.length;
+    slides[currentIndex].classList.add('active');
+}
+
+// 4秒ごとに画像を切り替え（お好みで秒数を変更できます：4000 = 4秒）
+setInterval(showNextSlide, 4000);
 </script>
 
 </body>
