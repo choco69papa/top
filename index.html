@@ -52,8 +52,17 @@
 </header>
 
 <main>
+
+    
 <section class="hero">
-    <img src="top1.png" alt="BEAUTY SALON ODA 店内" class="hero-image">
+    <!-- ▼ 複数の画像をスライドさせる要素に変更 (例: top1.png, top2.png, top3.png) -->
+    <div class="hero-slider">
+        <div class="slide active" style="background-image: url('top1.png');"></div>
+        <div class="slide" style="background-image: url('top2.png');"></div>
+        <div class="slide" style="background-image: url('top3.png');"></div>
+    </div>
+
+    <!-- 文字やボタンはそのまま上に重ねます -->
     <div class="hero-text">
         <h1>
             あなたらしい美しさを、<br>
