@@ -600,6 +600,12 @@ Responsive (タブレット向け: 900px以下)
     color: #666;
   }
 
+  .container h2 {
+    font-size: 22px;
+    line-height: 1.4;
+    margin-bottom: 15px;
+  }
+
   /* --- その他のパーツ --- */
   .btn, .reserve-btn {
     padding: 12px 30px;
