@@ -152,7 +152,7 @@ Hero Inner
 }
 
 .hero-text h1 {
-    font-size: 38px;
+    font-size: 42px;
     font-weight: 300;
     color: #8c6b4d;
     line-height: 1;
@@ -166,7 +166,7 @@ Hero Inner
 }
 
 .hero-text h2 {
-    font-size: 32px;
+    font-size: 28px;
     font-weight: 300;
     margin-bottom: 25px;
     line-height: 1.4;
@@ -574,7 +574,7 @@ Responsive (タブレット向け: 900px以下)
   }
 
   .hero h1 {
-    font-size: 24px;
+    font-size: 18px;
     line-height: 1.4;
     margin-bottom: 15px;
     color: #6b533e;
