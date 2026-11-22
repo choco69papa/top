@@ -2,7 +2,7 @@
 Reset
 =================================== */
 
-* {
+- {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -304,10 +304,14 @@ Price Menu
 }
 
 .price-list {
-    width: min(100%, 900px);
+    width: min(100%, 820px);
     margin: 0 auto;
-    background: #ffffff;
-    padding: 60px;
+    background: #FBF8F1;
+    padding: 24px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
     box-shadow: 0 10px 40px rgba(0, 0, 0, .05);
 }
 
@@ -315,27 +319,51 @@ Price Menu
     margin-top: 30px;
 }
 
+.price-item-header h3 {
+    margin: 0 0 4px 0;
+    font-size: 20px;
+    font-weight: 700;
+    color: #2B241E;
+}
+
 .price-item {
+    background: #ffffff;
+    border: 3px solid #C5B378;
+    border-radius: 24px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 22px 0;
-    border-bottom: 1px solid #ece5dc;
+    gap: 20px;
+    padding: 20px 24px;
     font-size: 18px;
 }
 
-.price-item:last-child {
-    border-bottom: none;
+.price-item:first-of-type {
+    border-color: #B84A39;
 }
 
-.price-item span:first-child {
-    color: #555;
+.price-item > span:first-child {
+    flex: 1;
+    padding-right: 20px;
+    border-right: 1.5px solid #4A423B;
+    color: #2B241E;
+    line-height: 1.5;
 }
 
-.price-item span:last-child {
-    color: #8c6b4d;
+.price-item strong {
+    font-size: 20px;
+    font-weight: 700;
+    color: #2B241E;
+}
+
+.price-item > span:last-child {
+    color: #2B241E;
     font-weight: bold;
+    font-size: 34px;
     letter-spacing: 1px;
+    white-space: nowrap;
+    min-width: 140px;
+    text-align: center;
 }
 
 
@@ -498,11 +526,17 @@ Responsive (タブレット向け: 900px以下)
     }
 
     .price-list {
-        padding: 30px;
+        padding: 20px;
     }
 
     .price-item {
         font-size: 16px;
+        padding: 18px 20px;
+    }
+
+    .price-item > span:last-child {
+        font-size: 28px;
+        min-width: 110px;
     }
 
     .footer-inner {
@@ -572,11 +606,11 @@ Responsive (タブレット向け: 900px以下)
     text-align: center;
     max-width: 100%;
   }
-    
-/* --- 個別メニューページのヒーローエリアの空白を解消 --- */
+
+  /* --- 個別メニューページのヒーローエリアの空白を解消 --- */
   .page-hero {
     padding-top: 15px;      /* 上部の余白をスッキリさせる */
-    min-height: auto;       */ PC用の無駄な高さをリセット */
+    min-height: auto;       /* PC用の無駄な高さをリセット */
   }
 
   .hero-inner {
@@ -597,8 +631,8 @@ Responsive (タブレット向け: 900px以下)
     height: 100%;
     object-fit: cover;
   }
-    
- .hero-text h1 {
+
+  .hero-text h1 {
     font-size: 32px; /* 見た目に応じて 18px〜26px 程度に調整してください */
     line-height: 1.4;
     margin-bottom: 15px;
@@ -635,6 +669,30 @@ Responsive (タブレット向け: 900px以下)
     font-size: 24px;
     line-height: 1.4;
     margin-bottom: 15px;
+  }
+
+  /* --- 価格メニュー（スマホ表示） --- */
+  .price-list {
+    padding: 16px;
+  }
+
+  .price-item {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+    padding: 16px;
+  }
+
+  .price-item > span:first-child {
+    padding-right: 0;
+    padding-bottom: 12px;
+    border-right: none;
+    border-bottom: 1.5px solid #4A423B;
+  }
+
+  .price-item > span:last-child {
+    min-width: 0;
+    font-size: 26px;
   }
 
   /* --- その他のパーツ --- */
