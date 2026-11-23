@@ -344,7 +344,8 @@ Cut Course Card Style (3メニュー限定)
 =================================== */
 
 .price-list.cut-course-list {
-    width: min(100%, 900px);
+    width: 100%;
+    max-width: none;
     background: #FBF8F1;
     padding: 28px 32px;
     border-radius: 20px;
@@ -382,8 +383,9 @@ Cut Course Card Style (3メニュー限定)
 }
 
 .cut-course-list .cut-info {
-    flex: 0 0 auto;
-    width: calc(100% - 294px);
+    flex: 1 1 auto;
+    min-width: 0;
+    width: auto;
     padding-right: 24px;
     border-right: 1.5px solid #4A423B;
     color: #2B241E;
@@ -399,6 +401,7 @@ Cut Course Card Style (3メニュー限定)
 }
 
 .cut-course-list .cut-desc {
+    display: block;
     color: #666;
     font-size: 16px;
     line-height: 1.6;
@@ -616,11 +619,15 @@ Responsive (タブレット向け: 900px以下)
     }
 
     .price-list.cut-course-list {
+        width: 100%;
+        max-width: none;
         padding: 20px;
     }
 
     .cut-course-list .cut-info {
-        width: calc(100% - 264px);
+        flex: 1 1 auto;
+        min-width: 0;
+        width: auto;
     }
 
     .cut-course-list .cut-price-box {
@@ -766,6 +773,8 @@ Responsive (タブレット向け: 900px以下)
 
   /* --- 価格メニュー（スマホ表示） --- */
   .price-list.cut-course-list {
+    width: 100%;
+    max-width: none;
     padding: 16px;
   }
 
@@ -808,4 +817,20 @@ Responsive (タブレット向け: 900px以下)
     grid-template-columns: 1fr;
   }
 
-  .
+  .menu-box {
+    padding: 25px 20px;
+    min-height: auto;
+  }
+
+  .menu-box h3 {
+    font-size: 20px;
+  }
+
+  .footer-inner {
+    padding: 40px 15px;
+  }
+
+  .footer-inner h3 {
+    font-size: 22px;
+  }
+}
