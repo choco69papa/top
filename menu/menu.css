@@ -351,11 +351,11 @@ Cut Course Card Style (3メニュー限定)
     margin-right: auto;
     box-sizing: border-box;
     background: #FBF8F1;
-    padding: 28px 32px;
+    padding: 40px 45px;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 18px;
 }
 
 .cut-course-list .price-item-header h3 {
@@ -627,7 +627,7 @@ Responsive (タブレット向け: 900px以下)
     .price-list.cut-course-list {
         width: 100%;
         max-width: 900px;
-        padding: 20px;
+        padding: 28px 24px;
     }
 
     .cut-course-list .cut-info {
@@ -782,7 +782,7 @@ Responsive (タブレット向け: 900px以下)
   .price-list.cut-course-list {
     width: 100%;
     max-width: 900px;
-    padding: 16px;
+    padding: 20px 16px;
   }
 
   .cut-course-list .price-item {
