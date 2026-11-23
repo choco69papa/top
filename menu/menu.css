@@ -2,7 +2,7 @@
 Reset
 =================================== */
 
-* {
+- {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -340,6 +340,110 @@ Price Menu
 
 
 /* ===================================
+Cut Course Card Style (3メニュー限定)
+=================================== */
+
+.price-list.cut-course-list {
+    background: #FBF8F1;
+    padding: 24px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.cut-course-list .price-item-header h3 {
+    margin: 0 0 4px 0;
+    font-size: 20px;
+    font-weight: 700;
+    color: #2B241E;
+}
+
+.cut-course-list .price-item {
+    background: #ffffff;
+    border: 3px solid #C5B378;
+    border-radius: 24px;
+    border-bottom: 3px solid #C5B378;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 24px;
+}
+
+.cut-course-list .price-item:last-child {
+    border-bottom: 3px solid #C5B378;
+}
+
+.cut-course-list .price-item:first-of-type {
+    border-color: #B84A39;
+    border-bottom-color: #B84A39;
+}
+
+.cut-course-list .cut-info {
+    flex: 1;
+    padding-right: 20px;
+    border-right: 1.5px solid #4A423B;
+    color: #2B241E;
+    line-height: 1.5;
+}
+
+.cut-course-list .cut-info strong {
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    color: #2B241E;
+    margin-bottom: 6px;
+}
+
+.cut-course-list .cut-desc {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.cut-course-list .cut-price-box {
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.cut-course-list .cut-price {
+    color: #2B241E;
+    font-weight: bold;
+    font-size: 34px;
+    letter-spacing: 1px;
+    line-height: 1.1;
+    white-space: nowrap;
+}
+
+.cut-course-list .cut-note {
+    display: inline-block;
+    padding: 5px 12px;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 1.4;
+    text-align: center;
+}
+
+.cut-course-list .cut-note.is-none {
+    background: #FBE4E1;
+    color: #9A3B2E;
+}
+
+.cut-course-list .cut-note.is-line,
+.cut-course-list .cut-note.is-both {
+    background: #E6EBD8;
+    color: #3D4535;
+}
+
+
+/* ===================================
 Reserve
 =================================== */
 
@@ -505,6 +609,18 @@ Responsive (タブレット向け: 900px以下)
         font-size: 16px;
     }
 
+    .price-list.cut-course-list {
+        padding: 20px;
+    }
+
+    .cut-course-list .cut-price-box {
+        width: 200px;
+    }
+
+    .cut-course-list .cut-price {
+        font-size: 28px;
+    }
+
     .footer-inner {
         padding: 50px 20px;
     }
@@ -572,11 +688,11 @@ Responsive (タブレット向け: 900px以下)
     text-align: center;
     max-width: 100%;
   }
-    
+
 /* --- 個別メニューページのヒーローエリアの空白を解消 --- */
   .page-hero {
     padding-top: 15px;      /* 上部の余白をスッキリさせる */
-    min-height: auto;       */ PC用の無駄な高さをリセット */
+    min-height: auto;       /* PC用の無駄な高さをリセット */
   }
 
   .hero-inner {
@@ -597,7 +713,7 @@ Responsive (タブレット向け: 900px以下)
     height: 100%;
     object-fit: cover;
   }
-    
+
  .hero-text h1 {
     font-size: 32px; /* 見た目に応じて 18px〜26px 程度に調整してください */
     line-height: 1.4;
@@ -635,6 +751,33 @@ Responsive (タブレット向け: 900px以下)
     font-size: 24px;
     line-height: 1.4;
     margin-bottom: 15px;
+  }
+
+  /* --- 価格メニュー（スマホ表示） --- */
+  .price-list.cut-course-list {
+    padding: 16px;
+  }
+
+  .cut-course-list .price-item {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+    padding: 16px;
+  }
+
+  .cut-course-list .cut-info {
+    padding-right: 0;
+    padding-bottom: 12px;
+    border-right: none;
+    border-bottom: 1.5px solid #4A423B;
+  }
+
+  .cut-course-list .cut-price-box {
+    width: 100%;
+  }
+
+  .cut-course-list .cut-price {
+    font-size: 26px;
   }
 
   /* --- その他のパーツ --- */
