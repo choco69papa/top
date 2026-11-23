@@ -346,7 +346,6 @@ Cut Course Card Style (3メニュー限定)
 .price .container .price-list.cut-course-list,
 .price-list.cut-course-list {
     width: 100%;
-    max-width: 900px;
     margin-left: auto;
     margin-right: auto;
     box-sizing: border-box;
