@@ -382,7 +382,8 @@ Cut Course Card Style (3メニュー限定)
 }
 
 .cut-course-list .cut-info {
-    flex: 1;
+    flex: 0 0 auto;
+    width: calc(100% - 294px);
     padding-right: 24px;
     border-right: 1.5px solid #4A423B;
     color: #2B241E;
@@ -402,9 +403,12 @@ Cut Course Card Style (3メニュー限定)
     font-size: 16px;
     line-height: 1.6;
     margin: 0;
+    width: 100%;
+    max-width: none;
 }
 
 .cut-course-list .cut-price-box {
+    flex: 0 0 270px;
     width: 270px;
     display: flex;
     flex-direction: column;
@@ -615,7 +619,12 @@ Responsive (タブレット向け: 900px以下)
         padding: 20px;
     }
 
+    .cut-course-list .cut-info {
+        width: calc(100% - 264px);
+    }
+
     .cut-course-list .cut-price-box {
+        flex: 0 0 240px;
         width: 240px;
     }
 
@@ -768,6 +777,8 @@ Responsive (タブレット向け: 900px以下)
   }
 
   .cut-course-list .cut-info {
+    flex: none;
+    width: 100%;
     padding-right: 0;
     padding-bottom: 12px;
     border-right: none;
@@ -775,6 +786,7 @@ Responsive (タブレット向け: 900px以下)
   }
 
   .cut-course-list .cut-price-box {
+    flex: none;
     width: 100%;
   }
 
@@ -796,20 +808,4 @@ Responsive (タブレット向け: 900px以下)
     grid-template-columns: 1fr;
   }
 
-  .menu-box {
-    padding: 25px 20px;
-    min-height: auto;
-  }
-
-  .menu-box h3 {
-    font-size: 20px;
-  }
-
-  .footer-inner {
-    padding: 40px 15px;
-  }
-
-  .footer-inner h3 {
-    font-size: 22px;
-  }
-}
+  .
